@@ -1,3 +1,9 @@
+[![NPM Version](https://img.shields.io/npm/v/grunt-date-suffix.svg?style=flat)](https://www.npmjs.com/package/grunt-date-suffix)
+[![NPM Downloads](https://img.shields.io/npm/dm/grunt-date-suffix.svg?style=flat)](https://npmjs.org/package/grunt-date-suffix)
+[![Build Status](https://travis-ci.org/iameugenejo/grunt-date-suffix.svg?branch=master)](https://travis-ci.org/iameugenejo/grunt-date-suffix)
+[![Dependency Status](https://david-dm.org/iameugenejo/grunt-date-suffix.svg)](https://david-dm.org/iameugenejo/grunt-date-suffix)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/iameugenejo/grunt-date-suffix?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 # grunt-date-suffix
 Grunt plugin for renaming a file with a date suffix.
 
