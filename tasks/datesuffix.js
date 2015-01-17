@@ -5,7 +5,7 @@ var fs = require("fs-extra");
 var df = require("date-format");
 
 module.exports = function(grunt) {
-  grunt.registerMultiTask("filerotate", "Rotate a file.", function() {
+  grunt.registerMultiTask("datesuffix", "Rotate a file.", function() {
     var options = this.data;
 
     var done = this.async();

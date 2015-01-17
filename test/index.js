@@ -37,7 +37,7 @@ describe("grunt-file-rotate test", function() {
   it("rotates to the same directory", function(done) {
     grunt.util.spawn({
       cmd: "grunt",
-      args: ["filerotate:test1"],
+      args: ["datesuffix:test1"],
       opts: {
         cwd: sandboxPath
       }
@@ -75,7 +75,7 @@ describe("grunt-file-rotate test", function() {
   it("rotates to a different directory", function(done) {
     grunt.util.spawn({
       cmd: "grunt",
-      args: ["filerotate:test2"],
+      args: ["datesuffix:test2"],
       opts: {
         cwd: sandboxPath
       }
@@ -114,7 +114,7 @@ describe("grunt-file-rotate test", function() {
   it("rotates to a different directory and leave the original copy", function(done) {
     grunt.util.spawn({
       cmd: "grunt",
-      args: ["filerotate:test3"],
+      args: ["datesuffix:test3"],
       opts: {
         cwd: sandboxPath
       }

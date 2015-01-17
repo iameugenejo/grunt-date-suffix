@@ -2,7 +2,7 @@
 
 module.exports = function(grunt) {
   grunt.initConfig({
-    filerotate: {
+    datesuffix: {
       test1: {
         file: "test.txt"
       },
