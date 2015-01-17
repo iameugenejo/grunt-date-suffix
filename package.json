@@ -1,0 +1,38 @@
+{
+  "name": "grunt-date-suffix",
+  "version": "1.0.0",
+  "description": "Grunt plugin that renames a file with date suffix.",
+  "main": "lib/datesuffix.js",
+  "scripts": {
+    "test": "mocha -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iameugenejo/grunt-date-suffix"
+  },
+  "keywords": [
+    "grunt",
+    "rename",
+    "file",
+    "date",
+    "backup"
+  ],
+  "author": "Eugene Jo <iameugenejo@gmail.com> (https://github.com/iameugenejo)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iameugenejo/grunt-date-suffix/issues"
+  },
+  "homepage": "https://github.com/iameugenejo/grunt-date-suffix",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "mocha": "^2.1.0",
+    "should": "^4.6.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "dependencies": {
+    "date-format": "0.0.2",
+    "fs-extra": "^0.14.0"
+  }
+}
