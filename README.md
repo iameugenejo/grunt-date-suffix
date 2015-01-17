@@ -1,4 +1,6 @@
 # grunt-date-suffix
+
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/iameugenejo/grunt-date-suffix?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Grunt plugin for renaming a file with a date suffix.
 
 ### Install
