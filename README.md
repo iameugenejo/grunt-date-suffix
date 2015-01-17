@@ -20,17 +20,21 @@ npm install grunt-date-suffix --save-dev
   grunt.initConfig({
     datesuffix: {
       test1: {
-        file: "test.txt",       //required
+        file: "test.txt",               //required
       },
       test2: {
-        file: "test.txt",       //required
-        dest: "output",         //default: undefined
+        file: "test.txt",               //required
+        dest: "output",                 //default: undefined
       },
       test3: {
-        file: "test.txt",       //required
-        dest: "output",         //default: undefined
-        copy: true,             //default: false
-        date_format: "yyyyMMdd" //default: "yyyyMMddhhmmssSSS"
+        file: "test.txt",               //required
+        dest: "output",                 //default: undefined
+        copy: true,                     //default: false
+        date_format: "yyyyMMdd"         //default: "yyyyMMddhhmmssSSS"
+      },
+      test4: {
+        files: "filedoesnotexist.txt",  //required
+        ignore_nonexistent: true        //default: false
       }
     }
   });
@@ -44,6 +48,7 @@ npm install grunt-date-suffix --save-dev
 grunt datesuffix:test1
 grunt datesuffix:test2
 grunt datesuffix:test3
+grunt datesuffix:test4
 ```
 
 ####Result
@@ -57,4 +62,7 @@ grunt datesuffix:test3
 # test3
   test.txt
   output/test.20150116.txt
+  
+# test4
+# no error is thrown even if the file does not exist
 ```
