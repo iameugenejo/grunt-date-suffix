@@ -43,7 +43,7 @@ describe("grunt-file-rotate test", function() {
       }
     }, function(err, out) {
       if(err) {
-        grunt.fail.fatal(out.stdout);
+        grunt.fail.fatal(out.stderr);
         return done(err);
       }
 
@@ -81,7 +81,7 @@ describe("grunt-file-rotate test", function() {
       }
     }, function(err) {
       if(err) {
-        grunt.fail.fatal(out.stdout);
+        grunt.fail.fatal(out.stderr);
         return done(err);
       }
 
@@ -120,7 +120,7 @@ describe("grunt-file-rotate test", function() {
       }
     }, function(err) {
       if(err) {
-        grunt.fail.fatal(out.stdout);
+        grunt.fail.fatal(out.stderr);
         return done(err);
       }
       
