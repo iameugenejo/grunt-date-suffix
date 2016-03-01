@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         if(ignoreNonExistent)
           return done();
         else
-          return done(new Error("file does not exist."));
+          return done(new Error("file " + file + " does not exist."));
       }
 
       fs.ensureDir(dest, function(err) {
@@ -36,10 +36,14 @@ module.exports = function(grunt) {
         fs.readdir(dest, function(err, files) {
           if(err) return done(err);
 
-          var newFile = Path.join(dest, filename.substring(0, filename.length-extname.length) + "." + df.asString(dateSuffixFormat, new Date()) + extname);
+          var newFilename = filename.substring(0, filename.length-extname.length) + "." + df.asString(dateSuffixFormat, new Date()) + extname;
+          var newFile = Path.join(dest, newFilename);
           var handler = copy ? fs.copy : fs.rename;
 
-          handler(file, newFile, done);
+          handler(file, newFile, function() {
+            grunt.log.ok((copy ? "Copied ": "Renamed ") + filename + " => " + (options.dest ? newFile : newFilename));
+            done();
+          });
         });//end of readdir(dest)
 
       });//end of ensureDir(dest)
