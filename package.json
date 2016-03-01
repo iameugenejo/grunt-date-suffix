@@ -1,6 +1,6 @@
 {
   "name": "grunt-date-suffix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grunt plugin for renaming a file with date suffix.",
   "main": "lib/datesuffix.js",
   "scripts": {
