@@ -29,7 +29,7 @@
     "should": "^4.6.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.5"
+    "grunt": "^0.4.5"
   },
   "dependencies": {
     "date-format": "0.0.2",
